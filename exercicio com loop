@@ -1,0 +1,32 @@
+<html>
+    <head>
+	    <title> Execicio7 </title>
+		</head>
+		<meta charset = "utf-8"/>
+		<title> PRaticando </title>
+	</head>
+	<body>
+		<h1>Fazendo um Exemplo</h1>
+	    <h3>Estruturas de repetição</h3>
+		<button onclick="bot()"> Calcular </button>
+		<p id="paragrafo1"></p>
+		<p id="paragrafo2"></p>
+		
+		<script>
+			function bot(){
+				var i;
+				var conteudo;
+				var ac = 0;
+				var media ;
+				for (i = 1 ; i <=10;i++){
+					conteudo = parseFloat(prompt("Por favor, informe o numero: "));
+					ac = ac + conteudo;
+				}
+				media = ac / 10;
+				document.getElementById("paragrafo1").innerHTML = "A Soma das notas é: " + ac;
+				document.getElementById("paragrafo2").innerHTML = "A Media é: " + media;
+				
+			}
+		</script>
+	</body>
+</html>	
